@@ -2,7 +2,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 class Even_odd_separator:
     def __init__(self):
-        self.file_path = "C:\\Users\\Admin\\Documents\\"
+        self.file_path = "C:\\python_projects\\file_reading_python_coding\\file_reading_python\\"
         self.even = []
         self.odd = []
     def create_file(self, file_name, data):
