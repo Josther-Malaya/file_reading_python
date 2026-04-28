@@ -1,6 +1,6 @@
 import logging
 logging.basicConfig(level=logging.INFO)
-class square_cube_separator:
+class SquareCubeSeparator:
     def __init__(self):
         self.file_path = "C:\\python_projects\\file_reading_python_coding\\file_reading_python\\p4_square_and_cube_separator\\"
         self.square = []
@@ -38,4 +38,4 @@ class square_cube_separator:
 
 
 if __name__ == "__main__":
-    square_cube_separator().separate_square_and_cube_integer_and_save()
+    SquareCubeSeparator().separate_square_and_cube_integer_and_save()
