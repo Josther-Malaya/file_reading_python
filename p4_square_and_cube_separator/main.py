@@ -1,10 +1,8 @@
 import logging
 logging.basicConfig(level=logging.INFO)
-path = "p4_square_and_cube_separator\\"
-
-class integer_separator:
+class square_cube_separator:
     def __init__(self):
-        self.file_path = path
+        self.file_path = "C:\\python_projects\\file_reading_python_coding\\file_reading_python\\p4_square_and_cube_separator\\"
         self.square = []
         self.cube = []
 
@@ -31,13 +29,13 @@ class integer_separator:
         numbers = self.get_data()
         for i in numbers:
             if i % 2 == 0:
-                self.square.append(i)
+                self.square.append(i * i)
                 continue
-            self.cube.append(i)
+            self.cube.append(i * i * i)
 
         self.create_file("square_numbers.txt", self.square)
         self.create_file("cube_numbers.txt", self.cube)
 
 
 if __name__ == "__main__":
-    integer_separator().separate_square_and_cube_integer_and_save()
+    square_cube_separator().separate_square_and_cube_integer_and_save()
