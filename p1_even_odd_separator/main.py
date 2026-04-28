@@ -1,8 +1,8 @@
 import logging
 logging.basicConfig(level=logging.INFO)
-class Even_odd_separator:
+class EvenOddSeparator:
     def __init__(self):
-        self.file_path = "C:\\python_projects\\file_reading_python_coding\\file_reading_python\\"
+        self.file_path = "C:\\python_projects\\file_reading_python_coding\\file_reading_python\\p1_even_odd_separator"
         self.even = []
         self.odd = []
     def create_file(self, file_name, data):
@@ -35,4 +35,4 @@ class Even_odd_separator:
         self.create_file("odd_numbers.txt", self.odd)
 
 if __name__ == "__main__":
-    Even_odd_separator().separate_even_and_odd_integer_and_save()
+    EvenOddSeparator().separate_even_and_odd_integer_and_save()
